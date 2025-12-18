@@ -2,7 +2,7 @@ export async function aiDecide({ type, context, options }) {
   console.log("🧠 aiDecide called:", { type, context, options })
 
   try {
-    const response = await fetch("http://localhost:3001/ai/decide", {
+    const response = await fetch("https://calm-decision.onrender.com/ai/decide", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
